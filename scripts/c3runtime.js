@@ -384,11 +384,7 @@ self["C3_Shaders"] = {};
 "use strict"
 self.C3_GetObjectRefTable = function () {
 	return [
-		C3.Plugins.Sprite,
-		C3.Plugins.System.Cnds.EveryTick,
-		C3.Plugins.Sprite.Acts.SetAngle,
-		C3.Plugins.Sprite.Exps.Angle,
-		C3.Plugins.System.Exps.dt
+		C3.Plugins.Sprite
 	];
 };
 
@@ -488,11 +484,7 @@ self.C3_GetObjectRefTable = function () {
 	}
 
 	self.C3_ExpressionFuncs = [
-		p => {
-const n0 = p._GetNode(0);
-const f1 = p._GetNode(1).GetBoundMethod();
-return () => (n0.ExpObject() + (60 * f1()));
-}
+		
 	];
 }
 
